@@ -57,7 +57,7 @@ export const createMovie = (req, res) => {
     release_date: release_date,
   };
   movies.push(movieWithId);
-  res.status(200);
+  res.status(201);
   res.send(`Movie with the id ${movieWithId.id} added to the database!`);
 };
 
